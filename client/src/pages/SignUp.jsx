@@ -26,7 +26,7 @@ export default function SignUp() {
           
       const result= await dispatch(signUpUser(signupstate))
         if(result){
-            navigate("/login")
+            navigate("/login",{replace:true})
         }
     }
   return (

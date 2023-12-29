@@ -25,9 +25,7 @@ export default function Login() {
        console.log("login result",result?.payload?.success)
        if(!result?.payload?.success){
     }else{
-
-           navigate("/")
-
+        navigate("/",{replace:true})
        }
     }
   return (
